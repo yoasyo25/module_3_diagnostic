@@ -1,0 +1,11 @@
+<%= @altfuels.count %> closest stations
+
+<% @altfuels.each do |altfuel| %>
+<ul class="station">
+  <li class="name"><%= altfuel.name %></li>
+  <li class="address"><%= altfuel.address %></li>
+  <li class="fuel-type"><%= altfuel.fuel_type %></li>
+  <li class="distance"><%= altfuel.distance %></li>
+  <li class="access-times"><%= altfuel.access_times %></li>
+</ul>
+<% end %>
