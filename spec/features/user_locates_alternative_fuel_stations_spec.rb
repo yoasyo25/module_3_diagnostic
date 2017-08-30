@@ -2,6 +2,7 @@ require 'rails_helper'
 
 feature "User searches zipcode" do
   scenario "user locates alt fuel stations within a 10 mile radius" do
+    altfuel = create(:altfuel)
 
     visit '/'
 
